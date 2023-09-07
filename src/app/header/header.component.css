@@ -1,0 +1,95 @@
+.main-container {
+  display: flex;
+  background-color: bisque;
+  height: 10vh;
+}
+.container {
+  display: flex;
+  height: 5vh;
+  width: 100vw;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+.logo img {
+  height: 5vh;
+  width: 10vw;
+}
+
+.navlistmobile {
+  margin-top: 10vh;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  text-align: center;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  right: -100vw;
+  width: 100%;
+  transition: right 1s;
+}
+
+.invisible {
+  right: 0vh;
+}
+
+.navbarmobile i {
+  z-index: 999;
+  font-size: 1.9rem;
+  position: fixed;
+  top: 20px;
+  right: 15px;
+  color: black;
+}
+.navbarmobile {
+  display: block;
+}
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navigation {
+  width: 300px;
+}
+
+.mainmenu,
+.submenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mainmenu a {
+  display: block;
+  background-color: bisque;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.mainmenu a:hover {
+  background-color: #908e6078;
+}
+
+.mainmenu li:hover .submenu {
+  display: block;
+  max-height: 200px;
+}
+
+.submenu a {
+  background-color: black;
+  color: bisque;
+}
+
+.submenu a:hover {
+  background-color: #080808;
+}
+
+.submenu {
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.5s ease-out;
+}

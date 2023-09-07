@@ -1,0 +1,46 @@
+<div class="main-container">
+  <div class="container">
+    <div class="logo">
+      <img src="assets/BOULANGERIE-DES-ARTS-Logo.png" alt="logo" />
+    </div>
+    <div class="navbarmobile">
+      <i
+        [ngClass]="displayMenuBurger ? 'fa-solid fa-x' : ' fa-solid fa-bars'"
+        (click)="toggleMenu()"
+      >
+      </i>
+
+      <nav
+        [ngClass]="
+          displayMenuBurger ? 'navlistmobile invisible' : 'navlistmobile'
+        "
+      >
+        <!-- <ul class="links">
+          <li>
+            <a [routerLink]="['/']">ACCUEIL</a>
+          </li>
+          <li><a [routerLink]="">A PROPOS DE NOUS </a></li>
+          <li><a [routerLink]="">NOS PRODUITS</a></li>
+          <ul class = "linksbis">
+            <li  ><a [routerLink]="">mmmmm</a></li>
+          </ul>
+          <li><a [routerLink]="">CONTACT</a></li>
+        </ul> -->
+        <ul class="mainmenu">
+          <li><a [routerLink]="['/']">ACCUEIL</a></li>
+          <li><a [routerLink]="">A PROPOS DE NOUS </a></li>
+          <li><a >NOS PRODUITS</a>
+            <ul class="submenu">
+              <li><a [routerLink]="">Snacking</a></li>
+              <li><a [routerLink]="">Patisserie</a></li>
+              <li><a [routerLink]="">Pain</a></li>
+              <li><a [routerLink]="">Vienoisserie</a></li>
+            </ul>
+          </li>
+          <li><a href="">CONTACT</a></li>
+        </ul>
+
+      </nav> 
+    </div>
+  </div>
+</div>
