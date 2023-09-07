@@ -22,7 +22,7 @@
   height: 90vh;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-around; */
+  
   text-align: center;
   backdrop-filter: blur(10px);
   position: fixed;
